@@ -1,23 +1,24 @@
 <?php
 /*
 Plugin Name: WooMinecraft
-Plugin URI: http://woominecraft.com
+Plugin URI: https://github.com/Baktus79/woominecraft-wp
 Description: A WooCommerce plugin which allows donations and commands to be sent to your Minecraft server.
-Author: Jerry Wood
-Version: 1.4.5
+Author: Baktus79 (original by Jerry Wood)
+Version: 1.5.0
 License: GPLv2
 Text Domain: woominecraft
 Domain Path: /languages
-Author URI: http://plugish.com
-WC requires at least: 3.0
-WC tested up to: 6.0.0
+WC requires at least: 6.0
+WC tested up to: 8.9.0
+Requires PHP: 8.0
+Update URI: false
 */
 
 namespace WooMinecraft;
 
 define( 'WMC_INCLUDES', plugin_dir_path( __FILE__ ) . 'includes/' );
 define( 'WMC_URL', plugin_dir_url( __FILE__ ) );
-define( 'WMC_VERSION', '1.4.5' );
+define( 'WMC_VERSION', '1.5.0' );
 
 // Require the helpers file, for use in :allthethings:
 require_once WMC_INCLUDES . 'helpers.php';
