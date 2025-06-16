@@ -68,7 +68,6 @@ function save_commands_to_order( $order_id ) {
 		}
 	}
 
-	// Fjern tomme linjer og lagre
 	foreach ( $tmp as $server_key => $cmds ) {
 		$filtered = array_filter( array_map( 'trim', $cmds ) );
 		if ( ! empty( $filtered ) ) {
